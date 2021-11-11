@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="2" name="Testchrome(failed)" parallel="tests">
+    <parameter name="BROWSER" value="chrome"/>
+    <classes>
+      <class name="vtigerTestScriptByTestNgOrg.createOrgTest">
+        <methods>
+          <include name="CreateOrgWithIndAndTypeTest"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="CreateOrganisationTest"/>
+          <include name="congigAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- vtigerTestScriptByTestNgOrg.createOrgTest -->
+    </classes>
+  </test> <!-- Testchrome(failed) -->
+  <test thread-count="2" name="Testfirefox(failed)" parallel="tests">
+    <parameter name="BROWSER" value="firefox"/>
+    <classes>
+      <class name="vtigerTestScriptByTestNgOrg.CreateConTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="CreateConWithOrgname"/>
+          <include name="CreateContact"/>
+          <include name="congigAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- vtigerTestScriptByTestNgOrg.CreateConTest -->
+    </classes>
+  </test> <!-- Testfirefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
