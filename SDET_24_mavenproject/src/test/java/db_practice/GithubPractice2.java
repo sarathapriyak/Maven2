@@ -8,6 +8,7 @@ public class GithubPractice2 {
 		public void update()
 		{
 			System.out.println("edited project");
+			System.out.println("conflict check");
 		}
 	}
 
